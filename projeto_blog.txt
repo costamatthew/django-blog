@@ -16,9 +16,9 @@ Criando um blog com Python e Django
 Projeto blog -> django-admin startproject blog .
 
 APPS
-    categorias (sem views e urls)
-    posts (com views e urls)
-    comentarios (sem views e urls)
+    categorias (sem views e urls) -> python manage.py startapp categorias
+    posts (com views e urls) -> python manage.py startapp posts
+    comentarios (sem views e urls) -> python manage.py startapp comentarios
     summernotes
 
 settings.py
@@ -88,3 +88,11 @@ settings.py
 
 4 - Templates
     Bootstrap
+
+Comandos
+python manage.py makemigrations
+python manage.py migrate
+python manage.py createsuperuser
+
+
+pip freeze > requirements.txt
